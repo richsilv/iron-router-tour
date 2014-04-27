@@ -62,7 +62,7 @@ For the above tour, one would load the tour into memory by using `Router.Tour.lo
 
 In addition, `Router.Tour.getTour()` will return the current tour object, whilst `Router.Tour.setConfig(configObject)` will overwrite the default configuration which is applied to every tour step (see above).
 
-### Styling
+### STYLING
 
 This packages will also install the [meteor-scss](https://atmospherejs.com/package/scss) package, which enables automatic compilation of `.scss` in your codebase.  If you're interested in using the Sass variables below, add this line to the end of the appropriate `.scss`; otherwise, just create a new `iron-router-tour.scss` file anywhere in your codebase with the line below in it to enable the default styling, and then use CSS as normal to update it.
 
@@ -85,6 +85,6 @@ This packages will also install the [meteor-scss](https://atmospherejs.com/packa
     $tour-button-color: #999 !default;
     $tour-button-text-color: #222 !default;
 
-## Example
+## EXAMPLE
 
-There's a simple example app [here](http://ironroutertourdemo.meteor.com).
+There's a simple demo app [here](http://ironroutertourdemo.meteor.com).
