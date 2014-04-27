@@ -1,0 +1,48 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/package.js": "6e1bf9ac1abc37e2ab74a1c0acfb841bad7f866d",
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/iron-router-tour.js": "46e9314a3aa9b47555c84c92d3c4ee66f22c1db9",
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/iron-router-tour.html": "5984fbda60b040f3e11acbb4ca94c95f5d3c3cf7",
+        "/home/richard/Meteor/tourdemo/packages/iron-router/package.js": "a019ebce6d4223b3038f84a10be3da8ad9433d82"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/package.js": "6e1bf9ac1abc37e2ab74a1c0acfb841bad7f866d"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/package.js": "6e1bf9ac1abc37e2ab74a1c0acfb841bad7f866d",
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/iron-router-tour_tests.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/home/richard/Meteor/tourdemo/packages/iron-router-tour/package.js": "6e1bf9ac1abc37e2ab74a1c0acfb841bad7f866d"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/richard/Meteor/tourdemo/packages/iron-router-tour/package.js": "6e1bf9ac1abc37e2ab74a1c0acfb841bad7f866d"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "iron-router-tour": "/home/richard/Meteor/tourdemo/packages/iron-router-tour",
+    "meteor": "/home/richard/.meteor/packages/meteor/8e32057b0d",
+    "iron-router": "/home/richard/Meteor/tourdemo/packages/iron-router",
+    "templating": "/home/richard/.meteor/packages/templating/3ed2abdb98",
+    "underscore": "/home/richard/.meteor/packages/underscore/381c001cdc",
+    "jquery": "/home/richard/.meteor/packages/jquery/2ff5a27117"
+  },
+  "source": "/home/richard/Meteor/tourdemo/packages/iron-router-tour"
+}

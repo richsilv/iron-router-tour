@@ -1,0 +1,79 @@
+$tour-background-color: #fff !default;
+$tour-text-color: #222 !default;
+$tour-border-color: #222 !default;
+$tour-arrow-size: 20px;
+$tour-gap-width: 5px;
+$tour-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !default;
+$tour-box-radius: 5px;
+$tour-transition: opacity 1s linear !default;
+$tour-button-color: #999 !default;
+$tour-button-text-color: #222 !default;
+
+$tour-arrow-total: ($tour-arrow-size * -2) - $tour-gap-width;
+$tour-border: 1px solid $tour-border-color !default;
+
+.tourMain {
+	position: absolute;
+    padding: 1em;
+    background-color: $tour-background-color;
+	border: $tour-border;
+	box-shadow: $tour-box-shadow !important;
+	-webkit-transition: $tour-transition;
+	transition: $tour-transition;
+    border-radius: $tour-box-radius;
+	z-index: 999999;
+}
+
+.tourMain > .tourInternal, .tourMain > .tourInternal > h2 {
+    color: $tour-text-color;    
+}
+
+.tourMain.topArrow:before{
+    content: ' ';
+    border-color: $tour-border-color transparent transparent;
+    border-style: solid;
+    border-width: $tour-arrow-size;
+    position: absolute;
+    bottom: $tour-arrow-total;
+    left: calc(50% - #{$tour-arrow-size});
+}
+
+.tourMain.bottomArrow:before{
+    content: ' ';
+    border-color: transparent transparent $tour-border-color transparent;
+    border-style: solid;
+    border-width: $tour-arrow-size;
+    position: absolute;
+    top: $tour-arrow-total;
+    left: calc(50% - #{$tour-arrow-size});
+}
+
+.tourMain.rightArrow:before{
+    content: ' ';
+    border-color: transparent $tour-border-color transparent transparent;
+    border-style: solid;
+    border-width: $tour-arrow-size;
+    position: absolute;
+    top: calc(50% - #{$tour-arrow-size});
+    left: $tour-arrow-total;
+}
+
+.tourMain.leftArrow:before{
+    content: ' ';
+    border-color: transparent transparent transparent $tour-border-color;
+    border-style: solid;
+    border-width: $tour-arrow-size;
+    position: absolute;
+    top: calc(50% - #{$tour-arrow-size});
+    right: $tour-arrow-total;
+}
+
+.tourMain > .tourInternal > .tourButton {
+    border-radius: $tour-box-radius;
+    background-color: $tour-button-color;
+    color: $tour-button-text-color;
+}
+
+.tourMain > .tourInternal > .tourButton:hover {
+    background-color: darken( $tour-button-color, 10% );
+}

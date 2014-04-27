@@ -1,0 +1,9 @@
+<template name="tourStep">
+	<div class="tourMain {{mainClass}} {{direction}}Arrow" style="position: absolute; opacity: 0;">
+		<div class="tourInternal {{internalClass}}">
+			{{#if title}}<h2 class="tourTitle {{titleClass}}">{{title}}</h2>{{/if}}
+			{{#if content}}<p class="tourContent {{contentClass}}">{{content}}</p>{{/if}}
+			<div class="tourButton {{buttonClass}}">{{buttonText}}</div>
+		</div>
+	</div>
+</template>
