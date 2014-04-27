@@ -58,13 +58,13 @@ The properties which can be specified for each step are:
 
 ### Firing the Tour
 
-For the above tour, one would load the tour into memory by using `Router.Tour.loadTour(tour)`.  The tour is started with the command `Router.Tour.nextStep()`.  The same command will progress the tour one step, although clicking the next button will have the same effect, so this may not be necessary.  The tour will automatically be unloaded when it completes.
+For the above tour, one would load the tour into memory by using `Router.Tour.loadTour(tour)`.  The tour is started with the command `Router.Tour.nextStep()`.  The same command will progress the tour one step, although clicking the next button will have the same effect, so this may not be necessary.  The tour will be automatically unloaded when it completes.
 
 In addition, `Router.Tour.getTour()` will return the current tour object, whilst `Router.Tour.setConfig(configObject)` will overwrite the default configuration which is applied to every tour step (see above).
 
 ## STYLING
 
-This packages will also install the [meteor-scss](https://atmospherejs.com/package/scss) package, which enables automatic compilation of `.scss` in your codebase.  If you're interested in using the Sass variables below, add this line to the end of the appropriate `.scss`; otherwise, just create a new `iron-router-tour.scss` file anywhere in your codebase with the line below in it to enable the default styling, and then use CSS as normal to update it.
+This packages will also install the [meteor-scss](https://atmospherejs.com/package/scss) package, which enables automatic compilation of `.scss` in your codebase.  If you're interested in using the Sass variables below, add this line to the end of the appropriate `.scss`; otherwise, just create a new `iron-router-tour.scss` file anywhere in your codebase with the line below in it to enable the default styling, and then use CSS as normal to style the tour steps if you want something different.
 
     @import "packages/iron-router-tour/iron-router-tour";
 
