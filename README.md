@@ -49,14 +49,14 @@ The properties which can be specified for each step are:
     width (optional),
     delay (before appearing, optional),
     mainClass,        |
-    InternalClass,   These are provided to allow you to attach extra classes to the different tour
-    titleClass,      elements automatically, which makes it easier to integrate them with CSS
-    contentClass,    frameworks if that's your cup of tea.
+    InternalClass,   (optional) these are provided to allow you to attach extra classes to the
+    titleClass,      different tour elements automatically, which makes it easier to integrate 
+    contentClass,    them with CSS frameworks if that's your cup of tea.
     buttonClass       |
 
 ### Firing the Tour
 
-For the above tour, one would load the tour into memory by using `Router.Tour.loadTour(tour)`.  The tour is started with the command `Router.Tour.nextStep()`.  The same command will progress the tour one step, although clicking the next button will have the same effect, so this shouldn't be necessary.  The tour will automatically be unloaded when it completes.
+For the above tour, one would load the tour into memory by using `Router.Tour.loadTour(tour)`.  The tour is started with the command `Router.Tour.nextStep()`.  The same command will progress the tour one step, although clicking the next button will have the same effect, so this may not be necessary.  The tour will automatically be unloaded when it completes.
 
 In addition, `Router.Tour.getTour()` will return the current tour object, whilst `Router.Tour.setConfig(configObject)` will overwrite the default configuration which is applied to every tour step (see above).
 
@@ -72,11 +72,11 @@ This packages will also install the [meteor-scss](https://atmospherejs.com/packa
     $tour-text-color: #222 !default;
     $tour-border-color: #222 !default;
 
-    $tour-arrow-size: 20px;
-    $tour-gap-width: 5px;
+    $tour-arrow-size: 20px !default;
+    $tour-gap-width: 5px !default;
 
     $tour-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !default;
-    $tour-box-radius: 5px;
+    $tour-box-radius: 5px !default;
 
     $tour-transition: opacity 1s linear !default;
 

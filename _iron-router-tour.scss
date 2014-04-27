@@ -1,10 +1,10 @@
 $tour-background-color: #fff !default;
 $tour-text-color: #222 !default;
 $tour-border-color: #222 !default;
-$tour-arrow-size: 20px;
-$tour-gap-width: 5px;
+$tour-arrow-size: 20px !default;
+$tour-gap-width: 5px !default;
 $tour-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !default;
-$tour-box-radius: 5px;
+$tour-box-radius: 5px !default;
 $tour-transition: opacity 1s linear !default;
 $tour-button-color: #999 !default;
 $tour-button-text-color: #222 !default;
