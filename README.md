@@ -52,7 +52,9 @@ The properties which can be specified for each step are:
     InternalClass,   (optional) these are provided to allow you to attach extra classes to the
     titleClass,      different tour elements automatically, which makes it easier to integrate 
     contentClass,    them with CSS frameworks if that's your cup of tea.
-    buttonClass       |
+    buttonClass,      |
+    before (optional, a hook to run before showing the step),
+    after (optional, a hook to run after the step's "next" button is clicked)
 
 ### Firing the Tour
 
