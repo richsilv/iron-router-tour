@@ -3,7 +3,7 @@
 		<div class="tourInternal {{internalClass}}">
 			{{#if title}}<h2 class="tourTitle {{titleClass}}">{{title}}</h2>{{/if}}
 			{{#if content}}<p class="tourContent {{contentClass}}">{{content}}</p>{{/if}}
-			<div class="tourButton {{buttonClass}}">{{buttonText}}</div>
+			{{#if buttonText}}<div class="tourButton {{buttonClass}}">{{buttonText}}</div>{{/if}}
 		</div>
 	</div>
 </template>
