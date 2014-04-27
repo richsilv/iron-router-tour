@@ -87,4 +87,4 @@ This packages will also install the [meteor-scss](https://atmospherejs.com/packa
 
 ## Example
 
-There's a simple example app [here](http://ironroutertourexample.meteor.com).
+There's a simple example app [here](http://ironroutertourdemo.meteor.com).
