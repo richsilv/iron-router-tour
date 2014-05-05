@@ -47,11 +47,11 @@ _.extend(Router, {
 	Tour : (function($) {
 
 		var config = {
-			mainClass: 'ui segment whitetranslucent',
-			internalClass: 'ui',
-			titleClass: 'ui header',
+			mainClass: '',
+			internalClass: '',
+			titleClass: '',
 			contentClass: '',
-			buttonClass: 'ui button',
+			buttonClass: '',
 			buttonText: 'Next',
 			arrowSize: 20,
 			gapSize: 5,
