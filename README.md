@@ -60,7 +60,7 @@ The properties which can be specified for each step are:
 
 For the above tour, one would load the tour into memory by using `Router.Tour.loadTour(tour)`.  The tour is started with the command `Router.Tour.nextStep()`.  The same command will progress the tour one step, although clicking the next button will have the same effect, so this may not be necessary.  The tour will be automatically unloaded when it completes.
 
-In addition, `Router.Tour.getTour()` will return the current tour object, whilst `Router.Tour.setConfig(configObject)` will overwrite the default configuration which is applied to every tour step (see above).
+In addition, `Router.Tour.getTour()` will return the current tour object, whilst `Router.Tour.setConfig(configObject)` will overwrite the default configuration which is applied to every tour step (see above).  `Router.Tour.currentPage` returns the name of the route that the tour thinks it's currently on, which is useful if you want to automatically cancel the tour in the event that the user navigates away from the current page - in `onBeforeAction`, just check whether there is a live tour with `getTour` and whether the current route name matches the result of `currentPage`, and if not cancel the tour with `Router.Tour.loadTour()`.
 
 ## STYLING
 
