@@ -4,7 +4,7 @@ A simple multi-page Meteor Tour / Joyride package designed to play nicely with I
 
 ## USAGE
 
-This package is designed for usage with Meteor 0.8.0 and above, and is incompatible with pre-Blaze versions.  This is a very early version, put together in a few hours over a weekend as I was unable to find a suitable multi-page alternative, and as a result you should expect issues.  In particular, error-handling is non-existent at present.
+This package is designed for usage with Meteor 0.8.0 and above, and is incompatible with pre-Blaze versions.  This is an early version, put together as I was unable to find a suitable multi-page alternative, and as a result there may be remaining issues.  Please report errors or desired features and I will endeavour to resolve.
 
 ### Installation
 
