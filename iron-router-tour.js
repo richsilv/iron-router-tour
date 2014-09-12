@@ -2,7 +2,7 @@ Meteor.startup(function() {
 
 	Template.tourStep.events({
 
-		'click .tourButton': function() {
+		'click .tourButton, touchend .tourButton': function() {
 			this.after && this.after.apply(this, arguments);
 			Router.Tour.nextStep();
 		}
@@ -56,7 +56,8 @@ _.extend(Router, {
 			arrowSize: 20,
 			gapSize: 5,
 			width: 300
-		}
+		},
+			cPage;
 
 		function setConfig(configObject) {
 			_.extend(config, configObject);
@@ -66,6 +67,7 @@ _.extend(Router, {
 			tourDetails = tour;
 			_index = 0;
 			_tourLength = tour ? tour.steps.length : 0;
+			if (_tourLength) cPage = tour.steps[0].page;
 			return true;
 		}
 
@@ -126,6 +128,8 @@ _.extend(Router, {
 				}, thisStep.delay ? thisStep.delay : 0);
 			
 			};
+
+			cPage = thisStep.page;
 			
 			if (!(thisStep.content || thisStep.title)) {
 			
@@ -141,6 +145,11 @@ _.extend(Router, {
 			}
 			else
 				renderFunc.apply(this, arguments);
+
+		}
+
+		function currentPage() {
+			return cPage;
 		}
 
 		function getOffsets(target, node, boxPosition) {
@@ -193,6 +202,7 @@ _.extend(Router, {
 			loadTour: loadTour,
 			getTour: getTour,
 			nextStep: nextStep,
+			currentPage: currentPage
 		
 		}
 
