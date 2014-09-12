@@ -1,12 +1,11 @@
 {
-  "name": "iron-router-tour",
-  "description": "A simple multi-page Tour/Joyride plugin designed to play nicely with Iron Router",
-  "homepage": "https://github.com/richsilv/iron-router-tour",
-  "author": "Richard Silverton <silverton.richard@googlemail.com>",
-  "version": "0.1.2",
+  "name": "richsilv:iron-router-tour",
+  "summary": "A simple multi-page Tour/Joyride plugin designed to play nicely with Iron Router",
+  "homepage": "https://github.com/richsilv/iron-router-tour.git",
+  "author": "Richard Silverton",
+  "version": "1.0.0",
   "git": "https://github.com/richsilv/iron-router-tour.git",
   "packages": {
-    "iron-router": {},
-    "scss": {}
+  	"iron:router": {}
   }
 }
