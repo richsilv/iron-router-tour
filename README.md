@@ -11,7 +11,7 @@ And for updating , it could run at Meteor 1.0 and above, maybe has some issues, 
 
 ### Installation
 
-    mrt add iron-router-tour
+    meteor add shjiaye:iron-router-tour
 
 ### Building your Tour
 
