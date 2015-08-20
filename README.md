@@ -88,3 +88,15 @@ This packages will also install the [meteor-scss](https://atmospherejs.com/packa
 ## EXAMPLE
 
 There's a simple demo app [here](http://ironroutertourdemo.meteor.com).
+
+## MORE i18n with tap:i18n
+
+...
+title: TAPi18n.__ 'This is a test'
+...
+
+## Known Issue:
+Scss: You need create at least 1 empty test.scss file in your client.
+
+Router: First router with Tour Starting had better at same router name.
+

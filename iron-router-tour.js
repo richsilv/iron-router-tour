@@ -88,7 +88,7 @@ _.extend(Router, {
 
 		function renderStep() {
 			
-			var thisPage = Router.current().route.name,
+			var thisPage = Router.current().route.getName(),
 				thisStep = tourDetails.steps[_index],
 				renderFunc;
 
