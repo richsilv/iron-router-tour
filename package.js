@@ -7,12 +7,12 @@ Package.describe({
 Package.onUse(function (api, where) {
 	api.versionsFrom('METEOR@0.9.1');
 	api.use(['templating', 'underscore', 'jquery'], 'client');
-	api.use('iron:router', ['client', 'server']);
-	api.imply('iron:router', ['client', 'server']);
+	api.use('iron:router@1.1.2', ['client', 'server']);
+	api.imply('iron:router@1.1.2', ['client', 'server']);
 	// api.use('iron-router', ['client', 'server']);
 	// api.imply('iron-router', ['client', 'server']);
-	api.use("fourseven:scss", ['client', 'server']);
-  	api.imply('fourseven:scss', ['client', 'server']);
+	api.use("fourseven:scss@4.9.0", ['client', 'server']);
+  	api.imply('fourseven:scss@4.9.0', ['client', 'server']);
 
   	api.addFiles('iron-router-tour.js', 'client');
   	api.addFiles('iron-router-tour.html', 'client');
