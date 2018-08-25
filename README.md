@@ -103,3 +103,5 @@ Scss: You need create at least 1 empty test.scss file in your client.
 
 Router: First router with Tour Starting had better at same router name.
 
+## Update
+support Meteor 1.7
