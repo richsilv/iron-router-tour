@@ -2,8 +2,8 @@
   "name": "shjiaye:iron-router-tour",
   "summary": "A simple multi-page Tour/Joyride plugin designed to play nicely with Iron Router",
   "homepage": "https://github.com/richsilv/iron-router-tour.git",
-  "author": "Richard Silverton",
-  "version": "1.0.3_1",
+  "author": "Richard Silverton carrot93",
+  "version": "1.0.3_2",
   "git": "https://github.com/carrot93/iron-router-tour.git",
   "packages": {
   	"iron:router": {}
