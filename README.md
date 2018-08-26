@@ -4,11 +4,14 @@ A simple multi-page Meteor Tour / Joyride package designed to play nicely with I
 
 ## USAGE
 
+```
 This package is designed for usage with Meteor 0.8.0 and above, and is incompatible with pre-Blaze versions.  This is a very early version, put together in a few hours over a weekend as I was unable to find a suitable multi-page alternative, and as a result you should expect issues.  In particular, error-handling is non-existent at present.
+```
+And for updating , it could run at Meteor 1.0 and above, maybe has some issues, but it works. :)
 
 ### Installation
 
-    mrt add iron-router-tour
+    meteor add shjiaye:iron-router-tour
 
 ### Building your Tour
 
@@ -88,3 +91,17 @@ This packages will also install the [meteor-scss](https://atmospherejs.com/packa
 ## EXAMPLE
 
 There's a simple demo app [here](http://ironroutertourdemo.meteor.com).
+
+## MORE i18n with tap:i18n
+
+...
+title: TAPi18n.__ 'This is a test'
+...
+
+## Known Issue:
+Scss: You need create at least 1 empty test.scss file in your client.
+
+Router: First router with Tour Starting had better at same router name.
+
+## Update
+support Meteor 1.7

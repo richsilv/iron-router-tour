@@ -88,7 +88,7 @@ _.extend(Router, {
 
 		function renderStep() {
 			
-			var thisPage = Router.current().route.name,
+			var thisPage = Router.current().route.getName(),
 				thisStep = tourDetails.steps[_index],
 				renderFunc;
 
@@ -101,7 +101,7 @@ _.extend(Router, {
 					direction = screen.width > 640 ? thisStep.placement : thisStep.mobilePlacement || thisStep.placement,
 					context = _.extend( {}, config, { direction: direction }, thisStep );
 				
-				UI.insert(UI.renderWithData(Template.tourStep, context), document.body);
+				Blaze.renderWithData(Template.tourStep, context, document.body);
 				
 				var tourMain = $('.tourMain');
 
